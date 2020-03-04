@@ -1,0 +1,31 @@
+cookie 0x40aa2044
+
+
+global value 08048c39
+bang 0804e160
+getbuf 08049378
+
+
+00000000 <.text>:
+   0:	c7 05 39 8c 04 08 44 	movl   $0x40aa2044,0x8048c39
+   7:	20 aa 40 
+   a:	68 60 e1 04 08       	push   $0x804e160
+   f:	c3                   	ret    
+
+
+eax 0x55683708
+
+
+0000000000000000 <.text>:
+   0:	b8 44 20 aa 40       	mov    $0x40aa2044,%eax
+   5:	68 a7 8c 04 08       	pushq  $0x8048ca7
+   a:	c3                   	retq   
+
+
+
+0000000000000000 <.text>:
+   0:	b8 44 20 aa 40       	mov    $0x40aa2044,%eax
+   5:	67 8d 6c 24 28       	lea    0x28(%esp),%ebp
+   a:	68 21 0d 04 08       	pushq  $0x8040d21
+   f:	c3                   	retq   
+
